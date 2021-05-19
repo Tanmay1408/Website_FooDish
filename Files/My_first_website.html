@@ -1,0 +1,1523 @@
+<!doctype html>
+<html>
+<head>
+<title>FooDish</title>
+<meta charset="utf-8" />
+<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="stylesheet" href="css/all.min.css">
+<link rel="stylesheet" href="css/fontawesome.min.css">
+<link href='https://fonts.googleapis.com/css?family=Luckiest Guy' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Niconne' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Permanent Marker' rel='stylesheet'>
+
+<style type="text/css">
+
+body {
+font-family: Arial, Helmet, Freesans, sans-serif;
+margin:0;
+line-height:16px;
+}
+#Container{
+      position:fixed;
+      z-index: 1;
+      top: 0;
+      bottom: 100;
+       left: 0;
+       right:0;
+}
+#top-Bar1 {
+      width: 26% ;
+      height: 140px ;
+      background-color: #ffffff;
+      margin: 0;
+      float: left ;
+      border: 0;
+      
+}      
+#top-Bar2 {
+      width: 74% ;
+      height: 65px ;
+      background-color: #fdbc44;
+      margin-top: 10px ;
+      float: left;
+      border: 0;
+}
+
+#FooDish-logo {
+      float: left;  
+      position: fixed;    
+}
+
+#FooDish-logo img{
+     height: 150px;
+}
+#top-menu {
+      position: relative;
+}
+#top-menu ul {
+float:left;
+padding:0; 
+margin:10px 0 0px 0px;
+height:46px;
+
+}
+#top-menu li {
+float:left;
+color:white;
+border-left:1px solid #bea829;
+height:33px;
+list-style:none;
+padding: 13px 33px 0 33px;
+}
+#top-menu li:hover {
+height:28px;
+}
+#Home:hover {
+border-bottom:5px solid #ffe711;
+}
+#Menu:hover {
+border-bottom:5px solid  #ffe711;
+}
+#Book_your_table:hover {
+border-bottom:5px solid #ffe711;
+}
+#About_us:hover {
+border-bottom:5px solid  #ffe711;
+}
+#Contact_us:hover {
+border-bottom:5px solid #ffe711;
+}
+#login{
+      position: relative;
+      left: 0;
+      margin-top: -20px;
+      padding-bottom: 50px;
+}
+#Login:hover {
+border-bottom:5px solid #ffe711;
+}
+#top-Bar3 {
+      width: 74% ;
+      height: 48px ;
+      background-color: #5a173c;
+      margin: 12px 0 0 0 ;
+      float: left ;
+}
+
+
+#Bar2 ul {
+
+width:100%;
+height:48px;
+padding:18px 0 0 ;
+position:relative;
+top:-25px;
+}
+#Bar2 li {
+border-right:1px solid #ffffff;
+float:left;
+list-style:none;
+color:white;
+width: 195px;
+text-align: center;
+font-size:90%;
+}
+#eanda {
+border-right:none;
+}
+
+a:link, a:visited {
+  background-color: #D9D9D9;
+  color: black;
+  border: 2px solid rgb(66, 3, 58);
+  width: 150px;
+  height: 35px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover, a:active {
+  background-color:#808080  ;
+  color: white;
+}
+.coverpage{
+       display: flex;
+       margin-top:170px;
+       border:6px #ccc solid;
+      
+       }
+    
+   .right {
+       flex:1;
+       padding-left:15px ;
+       padding-right: 15px;
+       background-color:#808080 ;
+    }
+   .right h5{
+    font-size: 50px;
+       text-align: center;
+       font-family: 'Luckiest Guy';
+       color:#fdbc44 ;
+   }
+   .right p{
+    font-size: 28px;
+       text-align: center;
+       font-family: 'Niconne';
+       line-height: 40px;
+       color:#ffffff ;
+   }
+   .left{
+       flex:1;
+       padding: 20px;
+      
+   }
+
+
+.titleName {
+  text-align: center;
+  font-size: 100px;
+  font-family: 'permanent marker' ;
+  padding: 10px 0 10px 0;
+  margin-top: 100px 20px 0 20px;
+  color: #ffffff;
+  text-shadow: 4px 4px #fdbc44 ;
+  outline-style: solid;
+  outline-color: #fdbc44;
+  background: rgba(0,0,0,0.5);
+  
+}
+
+.titleName1 {
+  text-align: center;
+  font-size: 100px;
+  font-family: 'permanent marker' ;
+  padding: 10px 20px 10px 20px;
+  margin-top: 100px -20px 0 -20px;
+  color: #ffffff;
+  text-shadow: 4px 4px #fdbc44 ;
+  outline-style: solid;
+  outline-color: #fdbc44;
+  background: rgba(0,0,0,0.3);
+  
+}
+
+.background1{
+  background-image: url("Images/b3.jpg") ;
+  background-size:cover;
+  padding: 50px 10px 550px 10px;
+  border: solid 6px #ccc;
+  
+}
+.grid1 {
+      display: grid;
+      margin:10px 0px 0px 0px;
+      padding:200px 30px 30px 20px ;
+      float: left;
+      background-size: 100%;
+      width: 96%;
+      size: 20%;
+      height: 320px;
+      grid-gap: 25px;
+      grid-template-columns: repeat(auto-fit, minmax(5rem, 1fr));
+      font-size: 50%;
+      z-index: 1;
+    }
+
+    .grid-item1 {
+      background-color: #ffffff;
+      border-radius: 0.4rem;
+      overflow: hidden;
+      box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
+      cursor: pointer;
+      transition: 0.2s;
+    }
+
+    .grid-item1:hover {
+      transform: translateY(-0.5%);
+      box-shadow: 0 4rem 8rem rgba(0, 0, 0, 0.5);
+    }
+
+    .card-header1 {
+      font-size:24px;
+      font-weight: 500;
+      text-align: center;
+      color: #0d0d0d;
+      margin: 7px 0 7px 0;
+    }
+
+    .card-img1 {
+      display: block;
+      width: 100%;
+      height: 232px;
+      object-fit: cover;
+    }
+
+    .card-content1 {
+      padding: 7px;
+    }
+
+    
+
+    .card-text1 {
+      font-size: 16px;
+      letter-spacing: 0.1rem;
+      line-height: 1.7;
+      margin:-5px 3px 3px 3px;
+      text-align:justify ;
+      color: #3d3d3d;
+      font-family: "Poppins", sans-serif;
+    }
+
+    .card-btn1 {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      text-align: center;
+      color: #ffffff;
+      background-color:#808080;
+      border: none;
+      border-radius: 0.4rem;
+      transition: 0.2s;
+      cursor: pointer;
+      letter-spacing: 0.1rem;
+    }
+
+    .card-btn1 span {
+      margin-left: 1rem;
+      transition: 0.2s;
+    }
+
+    .card-btn1:hover,
+    .card-btn1:active {
+      background-color: #F2B138;
+    }
+
+    .card-btn1:hover span,
+    .card-btn1:active span {
+      margin-left: 1.5rem;
+    }
+
+    @media only screen and (max-width: 60em) {
+      body {
+        padding: 3rem;
+      }
+      .grid {
+        grid-gap: 3rem;
+      }
+    }
+
+
+
+
+
+
+
+.background{
+  background-image: url("Images/b6.jpg") ;
+  background-size: contain;
+  padding: 50px 10px 620px 10px;
+  border: solid 6px #ccc;
+}
+
+.grid {
+      display: grid;
+      margin:10px 0px 0px 0px;
+      padding:200px 30px 30px 20px ;
+      float: left;
+      
+      background-size: 100%;
+      width: 96%;
+      size: 20%;
+      height: 390px;
+      grid-gap: 25px;
+      grid-template-columns: repeat(auto-fit, minmax(5rem, 1fr));
+      font-size: 50%;
+    }
+
+    .grid-item {
+      background-color: #fff;
+      border-radius: 0.4rem;
+      overflow: hidden;
+      box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
+      cursor: pointer;
+      transition: 0.2s;
+    }
+
+    .grid-item:hover {
+      transform: translateY(-0.5%);
+      box-shadow: 0 4rem 8rem rgba(0, 0, 0, 0.5);
+    }
+
+    .card-img {
+      display: block;
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 7px;
+    }
+
+    .card-header {
+      font-size:24px;
+      font-weight: 500;
+      text-align: center;
+      color: #0d0d0d;
+      margin: 7px 0 7px 0;
+    }
+
+    .card-text {
+      font-size: 16px;
+      letter-spacing: 0.1rem;
+      line-height: 1.7;
+      margin:-5px 3px 3px 3px;
+      text-align:justify ;
+      color: #3d3d3d;
+      font-family: "Poppins", sans-serif;
+    }
+
+    .card-btn {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      text-align: center;
+      color: #ffffff;
+      background-color: #808080;
+      border: none;
+      border-radius: 0.4rem;
+      transition: 0.2s;
+      cursor: pointer;
+      letter-spacing: 0.1rem;
+    }
+
+    .card-btn span {
+      margin-left: 1rem;
+      transition: 0.2s;
+    }
+
+    .card-btn:hover,
+    .card-btn:active {
+      background-color: #5a173c;
+    }
+
+    .card-btn:hover span,
+    .card-btn:active span {
+      margin-left: 1.5rem;
+    }
+
+    @media only screen and (max-width: 60em) {
+      body {
+        padding: 3rem;
+      }
+
+      .grid {
+        grid-gap: 3rem;
+      }
+    }
+    
+
+
+
+    .background2{
+      background-image: url("Images/b5.jpg") ;
+  background-size: cover;
+  border: solid 6px #ccc;
+  padding: 50px 10px 580px 10px;
+}
+
+
+    .grid2 {
+      display: grid;
+      margin:10px 0px 0px 0px;
+      padding:200px 30px 30px 20px ;
+      float: left;
+      
+      background-size: 100%;
+      width: 96%;
+      size: 20%;
+      height: 355px;
+      grid-gap: 25px;
+      grid-template-columns: repeat(auto-fit, minmax(5rem, 1fr));
+      font-size: 50%;
+    }
+
+    .grid-item2 {
+      background-color: #fff;
+      border-radius: 0.4rem;
+      overflow: hidden;
+      box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
+      cursor: pointer;
+      transition: 0.2s;
+    }
+
+    .grid-item2:hover {
+      transform: translateY(-0.5%);
+      box-shadow: 0 4rem 8rem rgba(0, 0, 0, 0.5);
+    }
+
+    .card-img2 {
+      display: block;
+      width: 100%;
+      height: 250px;
+      object-fit: fill;
+    }
+
+    .card-content2 {
+      padding: 7px;
+    }
+
+    .card-header2 {
+      font-size:24px;
+      font-weight: 500;
+      text-align: center;
+      color: #0d0d0d;
+      margin: 7px 0 7px 0;
+    }
+
+    .card-text2 {
+      font-size: 16px;
+      padding-bottom: 7px;
+      letter-spacing: 0.1rem;
+      line-height: 1.7;
+      margin:-5px 3px 3px 3px;
+      text-align:justify ;
+      color: #3d3d3d;
+      font-family: "Poppins", sans-serif;
+    }
+
+    .card-btn2 {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      text-align: center;
+      color: #ffffff;
+      background-color: #808080;
+      border: none;
+      border-radius: 0.4rem;
+      transition: 0.2s;
+      cursor: pointer;
+      letter-spacing: 0.1rem;
+    }
+
+    .card-btn2 span {
+      margin-left: 1rem;
+      transition: 0.2s;
+    }
+
+    .card-btn2:hover,
+    .card-btn2:active {
+      background-color: #F2B138;
+    }
+
+    .card-btn2:hover span,
+    .card-btn2:active span {
+      margin-left: 1.5rem;
+    }
+
+    @media only screen and (max-width: 60em) {
+      body {
+        padding: 3rem;
+      }
+
+      .grid2{
+        grid-gap: 3rem;
+      }
+    }
+    
+
+    .background3{
+      background-image: url("Images/b2.jpg") ;
+  background-size: contain;
+  padding: 50px 10px 575px 10px;
+  border: solid 6px #ccc;
+}
+
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,400i,700");
+
+
+
+
+
+.flexbox {
+  background: rgba(0,0,0,0.5);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search {
+  margin: 20px;
+}
+
+.search > h3 {
+  font-weight: normal;
+}
+
+.search > h1,
+.search > h3 {
+  color: white;
+  margin-bottom: 15px;
+  text-shadow: 0 1px #F2B138;
+}
+
+.search > div {
+  display: inline-block;
+  position: relative;
+  filter: drop-shadow(0 1px #F2B138);
+}
+
+.search > div:after {
+  content: "";
+  background: white;
+  width: 4px;
+  height: 20px;
+  position: absolute;
+  top: 40px;
+  right: 2px;
+  transform: rotate(135deg);
+}
+
+.search > div > input {
+  color: white;
+  font-size: 16px;
+  background: transparent;
+  width: 25px;
+  height: 25px;
+  padding: 10px;
+  border: solid 3px white;
+  outline: none;
+  border-radius: 35px;
+  transition: width 0.5s;
+}
+
+.search > div > input::placeholder {
+  color: #efefef;
+  opacity: 0;
+  transition: opacity 150ms ease-out;
+}
+
+.search > div > input:focus::placeholder {
+  opacity: 1;
+}
+
+.search > div > input:focus,
+.search > div > input:not(:placeholder-shown) {
+  width: 250px;
+}
+
+
+
+    .grid3 {
+      display: grid;
+      margin:10px 0px 0px 0px;
+      padding:200px 30px 30px 20px ;
+      float: left;
+      
+      background-size: 100%;
+      width: 96%;
+      size: 20%;
+      height: 350px;
+      grid-gap: 25px;
+      grid-template-columns: repeat(auto-fit, minmax(5rem, 1fr));
+      font-size: 50%;
+    }
+
+    .grid-item3 {
+      background-color: #fff;
+      border-radius: 0.4rem;
+      overflow: hidden;
+      box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
+      cursor: pointer;
+      transition: 0.2s;
+    }
+
+    .grid-item3:hover {
+      transform: translateY(-0.5%);
+      box-shadow: 0 4rem 8rem rgba(0, 0, 0, 0.5);
+    }
+
+    .card-img3 {
+      display: block;
+      width: 100%;
+      height: 250px;
+      object-fit:fill ;
+    }
+
+    .card-content3 {
+      padding: 7px;
+    }
+
+    .card-header3 {
+      padding-bottom: 7px;
+      font-size:24px;
+      font-weight: 500;
+      text-align: center;
+      color: #0d0d0d;
+      margin: 7px 0 7px 0;
+    }
+
+    .card-text3 {
+      font-size: 16px;
+      letter-spacing: 0.1rem;
+      line-height: 1.7;
+      margin:-5px 3px 3px 3px;
+      text-align:justify ;
+      color: #3d3d3d;
+      font-family: "Poppins", sans-serif;
+    }
+
+    .card-btn3 {
+      display: block;
+      width: 100%;
+      padding: 15px;
+      font-size: 16px;
+      text-align: center;
+      color: #ffffff;
+      background-color: #808080;
+      border: none;
+      border-radius: 0.4rem;
+      transition: 0.2s;
+      cursor: pointer;
+      letter-spacing: 0.1rem;
+    }
+
+    .card-btn33 span {
+      margin-left: 1rem;
+      transition: 0.2s;
+    }
+
+    .card-btn3:hover,
+    .card-btn3:active {
+      background-color: #5a173c;
+    }
+
+    .card-btn3:hover span,
+    .card-btn3:active span {
+      margin-left: 1.5rem;
+    }
+
+    @media only screen and (max-width: 60em) {
+      body {
+        padding: 3rem;
+      }
+
+      .grid3 {
+        grid-gap: 3rem;
+      }
+    }
+
+
+  .background4{
+    background-color: #ccc;
+    padding-top: 80px;
+  }
+
+
+/* Slideshow container */
+.slideshow-container {
+  width: 70%;
+  position: relative;
+  margin: auto;
+  padding-top: 140px; 
+}
+
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 24px;
+  line-height: 30px;
+  padding: 30px 100px 30px 100px;
+  position: absolute;
+  bottom: 8px;
+  width: 60%;
+  text-align: center;
+  
+  
+  margin: 100px 100px 30px 100px;
+}
+
+#grad1{
+    background-image: linear-gradient(white black );
+}
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #ffffff;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: relative;
+  margin-bottom: -30px;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+.login-box {
+  position: relative;
+  top: 50%;
+  margin-top: 200px;
+  left: 50%;
+  margin-bottom: -140px;
+  width: 400px;
+  padding: 40px;
+  transform: translate(-50%, -50%);
+  background: rgba(0,0,0.85);
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0,0,0,.6);
+  border-radius: 10px;
+}
+
+.login-box h2 {
+  margin: 0 0 30px;
+  padding: 0;
+  color: #fff;
+  text-align: center;
+}
+
+.login-box .user-box {
+  position: relative;
+}
+
+.login-box .user-box input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background: transparent;
+}
+.login-box .user-box label {
+  position: absolute;
+  top:0;
+  left: 0;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  pointer-events: none;
+  transition: .5s;
+}
+
+.login-box .user-box input:focus ~ label,
+.login-box .user-box input:valid ~ label {
+  top: -20px;
+  left: 0;
+  color: #F2B138;
+  font-size: 12px;
+}
+
+.login-box form a {
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  color: #000000;
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: .5s;
+  margin-top: 40px;
+  letter-spacing: 4px
+}
+
+.login-box a:hover {
+  background: #F2B138;
+  color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #F2B138,
+              0 0 25px #F2B138,
+              0 0 50px #F2B138,
+              0 0 100px #F2B138;
+}
+
+.login-box a span {
+  position: absolute;
+  display: block;
+}
+
+.login-box a span:nth-child(1) {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #F2B138);
+  animation: btn-anim1 1s linear infinite;
+}
+
+@keyframes btn-anim1 {
+  0% {
+    left: -100%;
+  }
+  50%,100% {
+    left: 100%;
+  }
+}
+
+.login-box a span:nth-child(2) {
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, #F2B138);
+  animation: btn-anim2 1s linear infinite;
+  animation-delay: .25s
+}
+
+@keyframes btn-anim2 {
+  0% {
+    top: -100%;
+  }
+  50%,100% {
+    top: 100%;
+  }
+}
+
+.login-box a span:nth-child(3) {
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg, transparent, #F2B138);
+  animation: btn-anim3 1s linear infinite;
+  animation-delay: .5s
+}
+
+@keyframes btn-anim3 {
+  0% {
+    right: -100%;
+  }
+  50%,100% {
+    right: 100%;
+  }
+}
+
+.login-box a span:nth-child(4) {
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, #F2B138);
+  animation: btn-anim4 1s linear infinite;
+  animation-delay: .75s
+}
+
+@keyframes btn-anim4 {
+  0% {
+    bottom: -100%;
+  }
+  50%,100% {
+    bottom: 100%;
+  }
+}
+
+
+.inner-footer{
+    margin: 20px 0 0 0;
+    padding: 0;
+    background-color: #000000;
+}
+
+.social-links{
+    display: flex;
+
+}
+
+.social-links ul{
+    display: flex;
+    padding: 20px;
+    width: 300px;
+    height: 30px;
+    margin: auto;
+
+}
+
+.social-items{
+    list-style: none
+}
+
+.social-items {
+    padding: 10px 20px;
+    font-size: 35px;
+    color: #6cccc6;
+}
+
+.social-items :hover{
+  color:#ffffff;
+}
+.quick-links{
+  display:flex;
+  width: 560px;
+  height: 70px;
+  margin: auto;
+
+}
+.quick-links ul{
+  display:flex;
+}
+
+.quick-items {
+  list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+  
+}
+
+a.one:link, a.one:visited {
+  background-color: #D9D9D9;
+  color: black;
+  border: 2px solid rgb(66, 3, 58);
+  width: 150px;
+  height: 35px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a.one:hover, a.one:active {
+  color:#56aaa4;
+  
+  
+}
+.quick-items {
+  text-decoration:none;
+  padding:0 15px;
+  font-size:18px;
+  color:white;
+  transition: all .25s ;
+}
+
+.quick-items :hover{
+
+}
+.outer-footer{
+  padding: 10px;
+  text-align: center;
+  
+}
+
+
+</style>
+</head>
+<body>
+      <div id="Container">
+            <div id="top-Bar1">
+                  <div class="fixed-width">
+                        <div id="FooDish-logo">
+                              <img src="Images/Resto logo.png"/>
+                        </div>
+                  
+                  </div>
+
+            </div>
+
+            <div id="top-Bar2">
+                  <div id="top-menu">
+                        <ul>
+                        <li id="Home">
+                        Home
+                        </li>
+                        <li id="Menu">
+                        Menu
+                        </li>
+                        <li id="Book_your_table">
+                        Book your table
+                        </li>
+                        <li id="About_us">
+                        About us
+                        </li>
+                        <li id="Contact_us">
+                        Contact us
+                        </li>     
+                        <li id="Login">
+                            Login 
+                          </li>
+                        </ul>
+                        </div>
+
+            </div>
+            <div id="top-Bar3">
+                  <div class="fixed-width">
+                        
+                  
+                  
+
+            
+
+            <div id="Bar2">
+                  <ul>
+                  <li>
+                  <a href="#Categories">Categories</a>
+                  </li>
+                  <li>
+                  <a href="#Seasonal special">Seasonal special
+                  </a>
+                  </li>
+                  <li>
+                  <a href="#Authentic FooDish">Authentic FooDish </a>
+                  </li> 
+                  <li>
+                  <a href="#Must try">Must try</a>
+                  </li>
+                  <li style="border-right:none">
+                  <a href="#Reviews">Reviews</a>
+                  </li>
+                  </ul>
+                  </div>
+                  </div>
+            </div>
+      </div>
+    
+      <div>
+            <div class="coverpage">
+                <div class="left">
+                    <div id ="cover-page">
+                          <div>
+                                <video src="videos/production ID_4008533.mp4"  height="400px" autoplay loop >
+                                 </video>
+                          </div>
+                    </div>
+            </div>
+                    <div class="right">
+                      <h5>Welcome</h5>
+                      <p>The only thing we love more than FooDish is "You".
+                         So give us chance to serve 
+                         <br>MOUTH WATERING <br>dishes at lowest rates than ever </p>
+                    </div>
+            </div>
+     
+            
+      <a name="Categories">
+        <div class="background1">
+          <div class="titleName"><p>CATEGORIES</p></div>
+      <div class="grid1">
+            <div class="grid-item1">
+              <div class="card1">
+                <img class="card-img1" src="Images/paneer.jpg" alt="Rome" />
+                <div class="card-content1">
+                  <h1 class="card-header">Desi Tadka</h1>
+                  <button class="card-btn1">Check now <span>&rarr;</span></button>
+                </div>
+              </div>
+            </div>
+
+            <div class="grid-item1">
+                  <div class="card1">
+                    <img class="card-img1" src="Images/continental.jpg" alt="Rome" />
+                    <div class="card-content1">
+                      <h1 class="card-header">Continental</h1>
+                      <button class="card-btn1">Check now <span>&rarr;</span></button>
+                    </div>
+                  </div>
+                </div>
+
+      
+                  <div class="grid-item1">
+                  <div class="card1">
+                    <img class="card-img1" src="Images/desserts.jpg" alt="Rome" />
+                    <div class="card-content1">
+                      <h1 class="card-header">Desserts</h1>
+                      <button class="card-btn1">Check now <span>&rarr;</span></button>
+                    </div>
+                  </div>
+                </div>
+
+            <div class="grid-item1">
+                  <div class="card1">
+                    <img class="card-img1" src="Images/snacks.jpg" alt="Rome" />
+                    <div class="card-content1">
+                      <h1 class="card-header">Snack Corner</h1>
+                      <button class="card-btn1">Check now <span>&rarr;</span></button>
+                    </div>
+                  </div>
+                </div>
+            
+                <div class="grid-item1">
+                  <div class="card1">
+                    <img class="card-img1" src="Images/beverage.jpg" alt="Rome" />
+                    <div class="card-content1">
+                      <h1 class="card-header">Beverages</h1>
+                      <button class="card-btn1">Check now <span>&rarr;</span></button>
+                    </div>
+                  </div>
+                </div>
+      </div>
+      </div>
+      </div>
+    </div>
+  </div>
+      </a>
+
+
+      <a name="Seasonal special">
+        <div class="background">
+          <div class="titleName"><p>SEASONAL SPECIAL</p></div>
+      <div class="grid">
+            <div class="grid-item">
+              <div class="card">
+                <img class="card-img" src="Images/festive-thali-recipe-main-photo.jpg" alt="Rome" />
+                <div class="card-content">
+                  <h1 class="card-header">Aamras Thali</h1>
+                  <p class="card-text">
+                    Made up of fresh & juicy HAPUS mango
+                  </p>
+                  <button class="card-btn">Visit <span>&rarr;</span></button>
+                </div>
+              </div>
+            </div>
+            <div class="grid-item">
+                  <div class="card">
+                    <img class="card-img" src="Images/coconut-rice-popular-south-indian-260nw-668954395.jpg" alt="Rome" />
+                    <div class="card-content">
+                      <h1 class="card-header">Coconutish</h1>
+                      <p class="card-text">
+                        Delecious taste of coconuts in varieties.
+                      </p>
+                      <button class="card-btn">Visit <span>&rarr;</span></button>
+                    </div>
+                  </div>
+                </div>
+            <div class="grid-item">
+              <div class="card">
+                <img
+                  class="card-img"
+                  src="./Images/fruit curry.jpg"
+                  alt="Grand Canyon"
+                />
+                <div class="card-content">
+                  <h1 class="card-header">Fruit Curries</h1>
+                  <p class="card-text">
+                        Tasty curries made up of juicy fruits.
+                  </p>
+                  <button class="card-btn">Visit <span>&rarr;</span></button>
+                </div>
+              </div>
+            </div>
+            <div class="grid-item">
+              <div class="card">
+                <img
+                  class="card-img"
+                  src="./Images/Fast food.jpg"
+                  alt="Grand Canyon" 
+                />
+                <div class="card-content">
+                  <h1 class="card-header">Fast FooDish </h1>
+                  <p class="card-text">
+                   Wide range of mouth watering Fast foods.
+                  </p>
+                     <button class="card-btn">Visit <span>&rarr;</span></button>
+                </div>
+              </div>
+            </div>
+            <div class="grid-item">
+              <div class="card">
+                <img
+                  class="card-img"
+                  src="./Images/download.jpg"
+                  alt="Grand Canyon"
+                />
+                <div class="card-content">
+                  <h1 class="card-header">Cools</h1>
+                  <p class="card-text">
+                    Delight your thrust with yummy coldrinks
+                  </p>
+                  <button class="card-btn">Visit <span>&rarr;</span></button>
+                </div>
+              </div>
+            </div>
+      </div>
+      </div>
+      </a>  
+   
+
+    
+
+      <a name="Authentic FooDish">
+        <div class="background2">
+          <div class="titleName"><p>FooDish SPECIAL</p></div>
+            <div class="grid2">
+                  <div class="grid-item2">
+                    <div class="card2">
+                      <img class="card-img2" src="Images/t2.jpg" alt="Rome" />
+                      <div class="card-content2">
+                        <h1 class="card-header2">Paneer FooDish</h1>
+                        <p class="card-text2">
+                          
+                        </p>
+                        <button class="card-btn2">Rs.<s>400</s> 240 40%off  <span>&rarr;</span></button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="grid-item2">
+                        <div class="card2">
+                          <img class="card-img2" src="Images/t3.jpg" alt="Rome" />
+                          <div class="card-content2">
+                            <h1 class="card-header2">Mushroom FooDish</h1>
+                            <p class="card-text2">
+                            
+                            </p>
+                            <button class="card-btn2">Rs.<s>500</s> 350 30%off  <span>&rarr;</span></button>
+                          </div>
+                        </div>
+                      </div>
+                     
+                      <div class="grid-item2">
+                        <div class="card2">
+                          <img class="card-img2" src="Images/t5.jpg" alt="Rome" />
+                          <div class="card-content2">
+                            <h1 class="card-header2">Chicken FooDish</h1>
+                            <p class="card-text2">
+                            
+                            </p>
+                            <button class="card-btn2">Rs.<s>480</s> 336 33%off  <span>&rarr;</span></button>
+                          </div>
+                        </div>
+                      </div>
+                      
+                      <div class="grid-item2">
+                        <div class="card2">
+                          <img class="card-img2" src="Images/t1.jpg" alt="Rome" />
+                          <div class="card-content2">
+                            <h1 class="card-header2">Veg FooDish</h1>
+                            <p class="card-text2">
+                             
+                            </p>
+                            <button class="card-btn2">Rs.<s>250</s> 190 24%off  <span>&rarr;</span></button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="grid-item2">
+                        <div class="card2">
+                          <img class="card-img2" src="Images/t4.jpg" alt="Rome" />
+                          <div class="card-content2">
+                            <h1 class="card-header2">Sea FooDish</h1>
+                            <p class="card-text2">
+                              
+                            </p>
+                            <button class="card-btn2">Rs.<s>345</s> 555 38%off  <span>&rarr;</span></button>
+                          </div>
+                        </div>
+                      </div>
+            </div>
+        </div>
+            </div>
+      </a>
+
+
+      <a name="Must try">
+        <div class="background3">
+           <div class="titleName"><p>MUST TRY</p></div>
+          <div class="flexbox">
+            <div class="search">
+              
+              
+              <div>
+                <input type="text" placeholder="Search your fav food" required>
+              </div>
+            </div>
+          </div>
+         
+            <div class="grid3">
+                  <div class="grid-item3">
+                    <div class="card3">
+                      <img class="card-img3" src="Images/t7.jpg" alt="Lijjat-e-Kabab" />
+                      <div class="card-content3">
+                        <h1 class="card-header3">Lijjat-e-Kabab</h1>                      </p>
+                        <button class="card-btn3">Rs.<s>400</s> 240 40%off  <span>&rarr;</span></button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="grid-item3">
+                        <div class="card3">
+                          <img class="card-img3" src="Images/t8.jpg" alt="Veg Bhuna" />
+                          <div class="card-content3">
+                            <h1 class="card-header3">Veg Bhuna</h1>
+                            <button class="card-btn3">Rs.<s>400</s> 240 40%off  <span>&rarr;</span></button>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="grid-item3">
+                        <div class="card3">
+                          <img class="card-img3" src="Images/t6.jpg" alt="Prawn Curry" />
+                          <div class="card-content3">
+                            <h1 class="card-header3">Prawn Curry</h1>
+                            <button class="card-btn3">Rs.<s>400</s> 240 40%off  <span>&rarr;</span></button>
+                          </div>
+                        </div>
+                      </div>
+      
+                      <div class="grid-item3">
+                        <div class="card3">
+                          <img class="card-img3" src="Images/t9.jpg" alt="Paneer Lababdar" />
+                          <div class="card-content3">
+                            <h1 class="card-header3">Paneer Lababdar</h1>
+                            <button class="card-btn3"> Rs.<s>400</s> 240 40%off   <span>&rarr;</span></button>
+                          </div>
+                        </div>
+                      </div>
+            </div>
+        </div> 
+                  </div>
+      </a>
+    
+
+    
+    
+    <a name="Reviews">
+      <div class="background4">
+      <div class="titleName1"><p>REVIEWS</p></div>
+    <div class="slideshow-container">
+        
+    
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <img src="Images/s4.jpg" height="450px" style="width:100%">
+      <div class="text"><strong>"This cozy restaurant has left the best impressions! Hospitable hosts, delicious dishes, beautiful presentation, wide wine list and wonderful dessert. I recommend to everyone! I would like to come back here again and again."</strong></div>
+    </div>
+    
+    
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <img src="Images/s8.jpg" height="450px" style="width:100%">
+      <div class="text"><strong>"FooDish gives extraordinary service and yummy meals. One of my favourite restaurants around town." The meals served rapidly and the rates were reasonable. Highly recommended."</strong></div>
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 3</div>
+      <img src="Images/s6.jpg" height="450px" style="width:100%">
+      <div class="text"><strong>"This place is elegant with an awesome vibe. I went for breakfast and the food was amazing. The service was speedy and friendly. Their SNACKS CORNER are absolutely incredible! This lone visit has made this one of my favorite spots within city."</strong></div>
+    </div>
+    
+  </a> 
+    <br>
+    
+    <div style="text-align:center">
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+    </div>
+  </div>
+    <script>
+    var slideIndex = 0;
+    showSlides();
+    
+    function showSlides() {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}    
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+      setTimeout(showSlides, 4000); // Change image every 2 seconds
+    }
+    </script>
+
+<div>
+<div class="login-box">
+  <h2>Your review</h2>
+  <form>
+    <div class="user-box">
+      <input type="text" name="" required="">
+      <label>Email ID</label>
+    </div>
+    <div class="user-box">
+      <input type="password" name="" required="">
+      <label>Review</label>
+    </div>
+    <a href="#">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      Submit
+    </a>
+  </form>
+</div>
+</div>
+</div>
+
+<footer class="footer">
+  <div class="inner-footer">
+      <div class="social-links">
+          <ul>
+              <li class="social-items"><a.one href="#"><i class="fab fa-facebook"></i></a></li>
+              <li class="social-items"><a.one href="#"><i class="fab fa-twitter"></i></a></li>
+              <li class="social-items"><a.one href="#"><i class="fab fa-instagram"></i></a></li>
+              <li class="social-items"><a.one href="#"><i class="fab fa-tumblr"></i></a></li>
+          </ul>
+      </div>
+      <div class="quick-items">
+          <ul>
+          <li class="quick-items"><a.one href="#">About us</a></li>
+          <li class="quick-items"><a.one href="#">terms & conditions</a></li>
+          <li class="quick-items"><a.one href="#">Privacy policy</a></li>
+          <li class="quick-items"><a.one href="#">Copyright info</a></li>
+           <div class="arrow"> <i class="fas fa-arrow-circle-up"></i>
+            </div>
+      </ul>
+      </div>
+  </div>
+
+  <div class="outer-footer">
+      Copyright &copy; FooDish Co. All Rights Reserved
+  </div>
+</footer>
+
+
+</body>
+</html>
